@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascipt YAY</title>
+    <script>
+        window.onload = function(){
+            var myInt = "42";
+            let myotherInt = 9001;
+            anotherInt = 9000;
+
+            alert("I'm Annoying");
+            
+            const SOME_VALUE = kek;
+
+            let myDouble = [5, "hello", 3.14, "world"];
+            let myVar;
+            let myOtherVar = null;
+            
+            
+            //alert("I'm more annoying")
+            console.log("This is a console message");
+            //let response = prompt("do you ant to play a game? ")
+            if(true){
+                let y = 42;
+            }
+
+            let number = 2;
+            let aString = "sss"
+            console.log(number + 2);
+            console.log(number + "2");
+            console.log(number + parseInt(aString));
+
+            function printTwoNumberstoTheConsole(message, message){
+                console.log("This message is " + message + "and this " + message);
+
+            }
+
+            printTwoNumberstoTheConsole("one", 2);
+
+            let arrowAdd2 = (x,y,z) => x + 2;
+            arrowAdd2(40, 1, 2);
+            var myArray = [1,2,3,4];
+            for (let i = 0; 1 < myArray.length; i++ ){
+                console.log(myArray[1]);
+            }
+
+            for(const myVal of myArray){
+                console.log(myVal);
+            }
+            var myObject = {
+                name: "defaultName",
+                someNumber: 42,
+                anArray: [1,2,3,4,5,6]
+
+                
+            };
+
+            myObject.name = "bob smithh";
+            var currentDate = {
+                dateTime: null,
+            }
+            document.getElementById("update-date")
+                .addEventListener("click", pizzaTime);
+
+            function pizzaTime(){
+                console.log("is it pizza time?");
+            }
+        }
+    </script>
+</head>
+<body>
+
+    <div>
+        <p>
+            <span id="date-text">
+                Click the button
+            </span>
+        </p>
+        <p>
+            <button id="update-data">CLICK ME</button>
+        </p>
+    </div>
+</body>
+<footer>
+    <!-- Inline Element -->
+    <a href="../../">Back to the Index Page</a>
+</footer>
+</html>
