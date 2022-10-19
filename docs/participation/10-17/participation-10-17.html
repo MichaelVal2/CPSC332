@@ -106,6 +106,17 @@
                     context.closePath();
                 };
 
+                animFrameId = window.requestAnimationFrame(() => {
+                    ball2Coords[0] += xInc;
+                    if(ball2Coords[0] < 0 || ball2Coords[0] > canvas.width){
+                        xInc *= -1;
+                    }
+                    ball2Coords[1] += xInc;
+                    if(ball2Coords[1] < 0 || ball2Coords[1] > canvas.width){
+                        xInc *= -1;
+                    }
+                    ball2move(ball2Coords[0] + ball2Coords[1]);
+                });
 
                 Ball.prototype.clear = function () {
                     cutCircle(context, this.position[0], this.position[1], this.radius + 10);
@@ -152,7 +163,9 @@
             // ball2.setName("Red Ball 2");
             // ball2.draw();
             // ball2.move(200, 155);
-
+            var ball2Coords = [85, 55];
+            var xInc = 3;
+            var yInc = 3;
             // ball1.draw(); //would need to redraw the ball if we don't want it cut from overlap
 
             //#region mouseclick
